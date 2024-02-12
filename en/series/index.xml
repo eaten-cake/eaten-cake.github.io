@@ -10,6 +10,14 @@
     <webMaster>eaten_cake@163.com (Yin Ruxiao)</webMaster>
     <copyright>&amp;copy; 2024
 </copyright>
+    <lastBuildDate>Tue, 26 May 2020 00:00:00 +0000</lastBuildDate>
     <atom:link href="/en/series/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Themes Guide</title>
+      <link>/en/series/themes-guide/</link>
+      <pubDate>Tue, 26 May 2020 00:00:00 +0000</pubDate><author>eaten_cake@163.com (Yin Ruxiao)</author>
+      <guid>/en/series/themes-guide/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

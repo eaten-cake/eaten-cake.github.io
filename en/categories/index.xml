@@ -10,6 +10,21 @@
     <webMaster>eaten_cake@163.com (Yin Ruxiao)</webMaster>
     <copyright>&amp;copy; 2024
 </copyright>
+    <lastBuildDate>Tue, 26 May 2020 00:00:00 +0000</lastBuildDate>
     <atom:link href="/en/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>themes</title>
+      <link>/en/categories/themes/</link>
+      <pubDate>Tue, 26 May 2020 00:00:00 +0000</pubDate><author>eaten_cake@163.com (Yin Ruxiao)</author>
+      <guid>/en/categories/themes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>syntax</title>
+      <link>/en/categories/syntax/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate><author>eaten_cake@163.com (Yin Ruxiao)</author>
+      <guid>/en/categories/syntax/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
