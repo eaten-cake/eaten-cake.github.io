@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>标签 on Cake</title>
+    <title>标签 on Cake&#39;s blog</title>
     <link>/tags/</link>
-    <description>Recent content in 标签 on Cake</description>
+    <description>Recent content in 标签 on Cake&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
+    <managingEditor>eaten_cake@163.com (Yin Ruxiao)</managingEditor>
+    <webMaster>eaten_cake@163.com (Yin Ruxiao)</webMaster>
     <copyright>&amp;copy; 2024
 </copyright>
     <lastBuildDate>Mon, 12 Feb 2024 16:09:39 +0800</lastBuildDate>
@@ -13,7 +15,7 @@
     <item>
       <title>个人博客</title>
       <link>/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
-      <pubDate>Mon, 12 Feb 2024 16:09:39 +0800</pubDate>
+      <pubDate>Mon, 12 Feb 2024 16:09:39 +0800</pubDate><author>eaten_cake@163.com (Yin Ruxiao)</author>
       <guid>/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
       <description></description>
     </item>

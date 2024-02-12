@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>series on Cake</title>
+    <title>series on Cake&#39;s blog</title>
     <link>/en/series/</link>
-    <description>Recent content in series on Cake</description>
+    <description>Recent content in series on Cake&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <managingEditor>eaten_cake@163.com (Yin Ruxiao)</managingEditor>
+    <webMaster>eaten_cake@163.com (Yin Ruxiao)</webMaster>
     <copyright>&amp;copy; 2024
 </copyright>
     <atom:link href="/en/series/index.xml" rel="self" type="application/rss+xml" />

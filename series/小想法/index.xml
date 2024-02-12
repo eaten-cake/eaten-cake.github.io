@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>小想法 on Cake</title>
+    <title>小想法 on Cake&#39;s blog</title>
     <link>/series/%E5%B0%8F%E6%83%B3%E6%B3%95/</link>
-    <description>Recent content in 小想法 on Cake</description>
+    <description>Recent content in 小想法 on Cake&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
+    <managingEditor>eaten_cake@163.com (Yin Ruxiao)</managingEditor>
+    <webMaster>eaten_cake@163.com (Yin Ruxiao)</webMaster>
     <copyright>&amp;copy; 2024
 </copyright>
     <lastBuildDate>Mon, 12 Feb 2024 16:09:39 +0800</lastBuildDate>
@@ -13,14 +15,14 @@
     <item>
       <title>博客文章Tutorial</title>
       <link>/posts/ideas/tutorial/</link>
-      <pubDate>Mon, 12 Feb 2024 16:09:39 +0800</pubDate>
+      <pubDate>Mon, 12 Feb 2024 16:09:39 +0800</pubDate><author>eaten_cake@163.com (Yin Ruxiao)</author>
       <guid>/posts/ideas/tutorial/</guid>
-      <description>相关网站 各种小表情 😜</description>
+      <description>相关网站 各种小表情 😜 Font Awesome图标库.</description>
     </item>
     <item>
       <title>如何使用hugo搭建个人博客（以eureka主题为例）？</title>
       <link>/posts/ideas/use_hugo/</link>
-      <pubDate>Mon, 12 Feb 2024 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 12 Feb 2024 00:00:00 +0000</pubDate><author>eaten_cake@163.com (Yin Ruxiao)</author>
       <guid>/posts/ideas/use_hugo/</guid>
       <description>1. 引言 本文介绍如何使用hugo这个静态网站生成器来生成自己的个人博客。并使用Github Pages托管网站使网页可以被在公网访问。 2. 安装hugo以及g</description>
     </item>
