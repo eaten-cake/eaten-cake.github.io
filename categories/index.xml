@@ -1,34 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>主题 on Chat</title>
+    <title>主题 on Cake</title>
     <link>/categories/</link>
-    <description>Recent content in 主题 on Chat</description>
+    <description>Recent content in 主题 on Cake</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <copyright>&amp;copy; 2024
 </copyright>
-    <lastBuildDate>Mon, 12 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 12 Feb 2024 16:09:39 +0800</lastBuildDate>
     <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>杂谈</title>
       <link>/categories/%E6%9D%82%E8%B0%88/</link>
-      <pubDate>Mon, 12 Feb 2024 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 12 Feb 2024 16:09:39 +0800</pubDate>
       <guid>/categories/%E6%9D%82%E8%B0%88/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>syntax</title>
-      <link>/categories/syntax/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>/categories/syntax/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>themes</title>
-      <link>/categories/themes/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>/categories/themes/</guid>
       <description></description>
     </item>
   </channel>
