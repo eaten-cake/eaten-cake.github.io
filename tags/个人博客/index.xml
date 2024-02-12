@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>个人博客 on Chat</title>
+    <link>/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+    <description>Recent content in 个人博客 on Chat</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>&amp;copy; 2024
+</copyright>
+    <lastBuildDate>Mon, 12 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何使用hugo搭建个人博客（以eureka主题为例）？</title>
+      <link>/posts/hello/</link>
+      <pubDate>Mon, 12 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>/posts/hello/</guid>
+      <description>1. 引言 2. 安装hugo以及go 3. 使用hugo本地预览博客网站 4. 使用Github Pages存放网站，使其可公网访问 </description>
+    </item>
+  </channel>
+</rss>
