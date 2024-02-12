@@ -17,14 +17,14 @@
       <link>/posts/ideas/tutorial/</link>
       <pubDate>Mon, 12 Feb 2024 16:09:39 +0800</pubDate><author>eaten_cake@163.com (Yin Ruxiao)</author>
       <guid>/posts/ideas/tutorial/</guid>
-      <description>相关网站 各种小表情 😜 Font Awesome图标库.</description>
+      <description>相关网站 各种小表情&#xA;😜&#xA;Font Awesome图标库.&#xA;杂项 &amp;amp;nbsp; // 半角空格 &amp;amp;emsp; // 全角空格 </description>
     </item>
     <item>
       <title>如何使用hugo搭建个人博客（以eureka主题为例）？</title>
       <link>/posts/ideas/use_hugo/</link>
       <pubDate>Mon, 12 Feb 2024 00:00:00 +0000</pubDate><author>eaten_cake@163.com (Yin Ruxiao)</author>
       <guid>/posts/ideas/use_hugo/</guid>
-      <description>1. 引言 本文介绍如何使用hugo这个静态网站生成器来生成自己的个人博客。并使用Github Pages托管网站使网页可以被在公网访问。 2. 安装hugo以及g</description>
+      <description>1. 引言 本文介绍如何使用hugo这个静态网站生成器来生成自己的个人博客。并使用Github Pages托管网站使网页可以被在公网访问。&#xA;以下所提内容并不深入，只是搭建自己博客过程的记录。&#xA;2. 安装hugo以及go 2.1 安装hugo hugo官方文档&#xA;我建议直接安装预构建版本，因为只是使用，并不在其基础上做出任何改进。&#xA;linux的x86机器安装amd64的版本，windows同理。&#xA;这里该有个图片，但我图床还没弄好&#xA;把压缩包解压后会出现一个名为hugo的可执行文件，将该文件所在路径加入到环境变量PATH中，(linux的话也就是执行export PATH=/path/to/hugo:$PATH)。然后运行&#xA;hugo version 正确输出即为配置成功。&#xA;2.2 安装go GO安装包下载地址&#xA;同样解压后获得可执行文件，将该可执行文件所在路径加入系统变量PATH。&#xA;3. 在本地预览个人博客 3.1 下载hugo的一个主题eureka Eureka的Github网址&#xA;将该项目clone下来，并按作者文档介绍中所述切换到对应Release版本。例：&#xA;git clone https://github.com/wangchucheng/hugo-eureka.git cd hugo-eureka git checkout 749f68c 切换完成后，我们使用作者文档中所述的使用Hugo Modules安装。经过我的验证，发现作者仓库中的go.mod有问题，我们删掉当前项目根目录下的go.mod，使用go重新拉取（我并不会使用Go语言，这里我不知道做的对不对，经我试验至少不错😅）。例：&#xA;rm go.mod hugo mod init github.com/wangchucheng/hugo-eureka 运行后会在根目录下生成go.mod,go.sum两个文件。&#xA;至此，我们就算安装完毕了。&#xA;3.2 使用hugo server本地预览 将项目根目录下文件夹exampleSite下config和content全部copy到项目根目录下。例：&#xA;cp -r exampleSite/* ./ 随后我们在项目的根目录下运行hugo的webserver，例：&#xA;hugo server 根据命令行提示在浏览器打开相应网址即可。然后就是更改config和content的内容了。往后更新也基本是更改这两个文件夹，由于我了解不深，继续讲解恐怕会产生误导，这里如何更改就请看作者的文档吧,讲解十分详细。&#xA;4. 使用Github Pages存放网站 现在我们已经可以本地预览博客内容了，但是我们肯定不是为了只搞一个自己看的东西，让我们把他放到公网上大家都访问吧！&#xA;4.1 打包部署 在项目的根目录下运行hugo命名，即可生成public文件夹，文件夹内包含各种静态资源(html,css,js)。常规部署网站是使用Nginx指向静态资源根目录下的index.html，所以如果使用Nginx部署在自己的服务器上，那就正常部署就好，我就不过多赘述了，毕竟如何使用Nginx也不是本文的主题。我们使用Github Pages服务，让Github来帮我们部署静态资源。&#xA;首先创建一个名称如username.github.io的github仓库（username为你的用户名），来使用github pages。创建好后将项目目录下public文件建立与该仓库的连接，并将文件夹下内容推送到仓库里。然后访问https://username.github.io/即可访问该网页。&#xA;4.2 使用脚本自动化打包部署 熟悉如何部署后，就可以使用脚本来代替我们完成这个更新过程了。&#xA;我们分别把项目主体(hugo eureka)放在一个github仓库里，再按上面所说将public文件夹放在github pages的仓库里。然后在hugo eureka下创建脚本update.sh，内容示例如下：</description>
     </item>
   </channel>
 </rss>

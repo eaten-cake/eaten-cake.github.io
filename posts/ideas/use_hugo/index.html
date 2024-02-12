@@ -104,7 +104,7 @@
     },
     "headline": "如何使用hugo搭建个人博客（以eureka主题为例）？ | Cake\u0027s blog","datePublished": "2024-02-12T00:00:00+00:00",
     "dateModified": "2024-02-12T00:00:00+00:00",
-    "wordCount":  117 ,
+    "wordCount":  146 ,
     "publisher": {
         "@type": "Person",
         "name": "YIN Ruxiao",
@@ -297,9 +297,86 @@
 
   <h2 id="1-引言">1. 引言</h2>
 <p>本文介绍如何使用<code>hugo</code>这个静态网站生成器来生成自己的个人博客。并使用Github Pages托管网站使网页可以被在公网访问。</p>
+<p>以下所提内容并不深入，只是搭建自己博客过程的记录。</p>
 <h2 id="2-安装hugo以及go">2. 安装hugo以及go</h2>
-<h2 id="3-使用hugo本地预览博客网站">3. 使用hugo本地预览博客网站</h2>
-<h2 id="4-使用github-pages存放网站使其可公网访问">4. 使用Github Pages存放网站，使其可公网访问</h2>
+<h3 id="21-安装hugo">2.1 安装hugo</h3>
+<p><a href="https://gohugo.io/documentation/">hugo官方文档</a></p>
+<p>我建议直接安装预构建版本，因为只是使用，并不在其基础上做出任何改进。</p>
+<p>linux的x86机器安装amd64的版本，windows同理。</p>
+<p><strong>这里该有个图片，但我图床还没弄好</strong></p>
+<p>把压缩包解压后会出现一个名为<code>hugo</code>的可执行文件，将该文件所在路径加入到环境变量<code>PATH</code>中，(linux的话也就是执行<code>export PATH=/path/to/hugo:$PATH</code>)。然后运行</p>
+<pre><code class="language-bash">hugo version
+</code></pre>
+<p>正确输出即为配置成功。</p>
+<h3 id="22-安装go">2.2 安装go</h3>
+<p><a href="https://go.dev/dl/">GO安装包下载地址</a></p>
+<p>同样解压后获得可执行文件，将该可执行文件所在路径加入系统变量<code>PATH</code>。</p>
+<h2 id="3-在本地预览个人博客">3. 在本地预览个人博客</h2>
+<h3 id="31-下载hugo的一个主题eureka">3.1 下载hugo的一个主题eureka</h3>
+<p><a href="https://github.com/wangchucheng/hugo-eureka">Eureka的Github网址</a></p>
+<p>将该项目clone下来，并按<a href="https://www.wangchucheng.com/zh/docs/hugo-eureka/getting-started/">作者文档</a>介绍中所述切换到对应<a href="https://github.com/wangchucheng/hugo-eureka/releases">Release</a>版本。例：</p>
+<pre><code class="language-bash">git clone https://github.com/wangchucheng/hugo-eureka.git
+cd hugo-eureka
+git checkout 749f68c
+</code></pre>
+<p>切换完成后，我们使用作者文档中所述的<code>使用Hugo Modules安装</code>。经过我的验证，发现作者仓库中的go.mod有问题，我们删掉当前项目根目录下的<code>go.mod</code>，使用go重新拉取（我并不会使用Go语言，这里我不知道做的对不对，经我试验至少不错😅）。例：</p>
+<pre><code class="language-bas">rm go.mod
+hugo mod init github.com/wangchucheng/hugo-eureka
+</code></pre>
+<p>运行后会在根目录下生成<code>go.mod,go.sum</code>两个文件。</p>
+<p>至此，我们就算安装完毕了。</p>
+<h3 id="32-使用hugo-server本地预览">3.2 使用hugo server本地预览</h3>
+<p>将项目根目录下文件夹<code>exampleSite</code>下<code>config</code>和<code>content</code>全部copy到项目根目录下。例：</p>
+<pre><code class="language-bash">cp -r exampleSite/* ./
+</code></pre>
+<p>随后我们在项目的根目录下运行hugo的webserver，例：</p>
+<pre><code class="language-bash">hugo server
+</code></pre>
+<p>根据命令行提示在浏览器打开相应网址即可。然后就是更改<code>config</code>和<code>content</code>的内容了。往后更新也基本是更改这两个文件夹，由于我了解不深，继续讲解恐怕会产生误导，这里如何更改就请看作者的<a href="https://www.wangchucheng.com/zh/docs/hugo-eureka/getting-started/">文档</a>吧,讲解十分详细。</p>
+<h2 id="4-使用github-pages存放网站">4. 使用Github Pages存放网站</h2>
+<p>现在我们已经可以本地预览博客内容了，但是我们肯定不是为了只搞一个自己看的东西，让我们把他放到公网上大家都访问吧！</p>
+<h3 id="41-打包部署">4.1 打包部署</h3>
+<p>在项目的根目录下运行<code>hugo</code>命名，即可生成<code>public</code>文件夹，文件夹内包含各种静态资源(html,css,js)。常规部署网站是使用<code>Nginx</code>指向静态资源根目录下的<code>index.html</code>，所以如果使用<code>Nginx</code>部署在自己的服务器上，那就正常部署就好，我就不过多赘述了，毕竟如何使用<code>Nginx</code>也不是本文的主题。我们使用Github Pages服务，让Github来帮我们部署静态资源。</p>
+<p>首先创建一个名称如<code>username.github.io</code>的github仓库（username为你的用户名），来使用github pages。创建好后将项目目录下<code>public</code>文件建立与该仓库的连接，并将文件夹下内容推送到仓库里。然后访问<code>https://username.github.io/</code>即可访问该网页。</p>
+<h3 id="42-使用脚本自动化打包部署">4.2 使用脚本自动化打包部署</h3>
+<p>熟悉如何部署后，就可以使用脚本来代替我们完成这个更新过程了。</p>
+<p>我们分别把项目主体(hugo eureka)放在一个github仓库里，再按上面所说将public文件夹放在github pages的仓库里。然后在<code>hugo eureka</code>下创建脚本<code>update.sh</code>，内容示例如下：</p>
+<pre><code class="language-bash"># 更新本仓库
+
+git pull
+git add .
+git commit -m &quot;new version&quot;
+git push
+
+echo &quot;Update finish&quot;
+
+# 用于发布新网站至Github Pages
+echo &quot;Currently path ${PWD}.&quot;
+
+echo &quot;Running 'hugo' to build folder 'public'.&quot;
+
+hugo
+
+echo &quot;Go to the 'public' folder&quot;
+
+cd public
+
+echo &quot;Update new content to username.github.io&quot;
+
+git pull
+git add .
+git commit -m &quot;new site&quot;
+git push
+
+cd -
+</code></pre>
+<p>每次更新内容后运行此脚本即可更新内容到Github Pages。</p>
+<p>还有一种是使用<code>Github Action</code>的方案，大致叙述一下：</p>
+<p><strong>把hugo-eureka存在github的一个仓库，通过设置action的触发条件，比如每次push都触发一次，将hugo-eureka的仓库更新后，通过设置.github/workflow下的文件，在github的服务器上运行hugo打包部署，然后将打包后的文件传到github pages的仓库。这样就实现了自动部署，体现在上面的脚本上就是删除了<code># 用于发布新网站至Github Pages</code>后的内容，将这部分内容由github代为执行。这样就可以不再本机上安装<code>hugo</code>了，也就是可以更换电脑依旧能够写博客。</strong></p>
+<h2 id="5-结语">5. 结语</h2>
+<blockquote>
+<p>GoodBye</p>
+</blockquote>
 
 </article>
 
@@ -388,9 +465,25 @@
   <nav id="TableOfContents">
   <ul>
     <li><a href="#1-引言">1. 引言</a></li>
-    <li><a href="#2-安装hugo以及go">2. 安装hugo以及go</a></li>
-    <li><a href="#3-使用hugo本地预览博客网站">3. 使用hugo本地预览博客网站</a></li>
-    <li><a href="#4-使用github-pages存放网站使其可公网访问">4. 使用Github Pages存放网站，使其可公网访问</a></li>
+    <li><a href="#2-安装hugo以及go">2. 安装hugo以及go</a>
+      <ul>
+        <li><a href="#21-安装hugo">2.1 安装hugo</a></li>
+        <li><a href="#22-安装go">2.2 安装go</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-在本地预览个人博客">3. 在本地预览个人博客</a>
+      <ul>
+        <li><a href="#31-下载hugo的一个主题eureka">3.1 下载hugo的一个主题eureka</a></li>
+        <li><a href="#32-使用hugo-server本地预览">3.2 使用hugo server本地预览</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-使用github-pages存放网站">4. 使用Github Pages存放网站</a>
+      <ul>
+        <li><a href="#41-打包部署">4.1 打包部署</a></li>
+        <li><a href="#42-使用脚本自动化打包部署">4.2 使用脚本自动化打包部署</a></li>
+      </ul>
+    </li>
+    <li><a href="#5-结语">5. 结语</a></li>
   </ul>
 </nav>
 </div>
