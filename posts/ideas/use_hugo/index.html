@@ -104,7 +104,7 @@
     },
     "headline": "如何使用hugo搭建个人博客（以eureka主题为例）？ | Cake\u0027s blog","datePublished": "2024-02-12T00:00:00+00:00",
     "dateModified": "2024-02-12T00:00:00+00:00",
-    "wordCount":  1787 ,
+    "wordCount":  1798 ,
     "publisher": {
         "@type": "Person",
         "name": "Yin Ruxiao",
@@ -298,7 +298,7 @@
   <h2 id="1-引言">1. 引言</h2>
 <p>本文介绍如何使用<code>hugo</code>这个静态网站生成器来生成自己的个人博客。并使用Github Pages托管网站使网页可以被在公网访问。</p>
 <p>以下所提内容并不深入，只是搭建自己博客过程的记录。</p>
-<h2 id="2-安装hugo以及go">2. 安装hugo以及go</h2>
+<h2 id="2-安装hugo及创建个人博客">2. 安装hugo及创建个人博客</h2>
 <h3 id="21-安装hugo">2.1 安装hugo</h3>
 <p><a href="https://gohugo.io/documentation/">hugo官方文档</a></p>
 <p>我建议直接安装预构建版本，因为只是使用，并不在其基础上做出任何改进。</p>
@@ -308,37 +308,33 @@
 <pre><code class="language-bash">hugo version
 </code></pre>
 <p>正确输出即为配置成功。</p>
-<h3 id="22-安装go">2.2 安装go</h3>
-<p><a href="https://go.dev/dl/">GO安装包下载地址</a></p>
-<p>同样解压后获得可执行文件，将该可执行文件所在路径加入系统变量<code>PATH</code>。</p>
-<h2 id="3-在本地预览个人博客">3. 在本地预览个人博客</h2>
-<h3 id="31-下载hugo的一个主题eureka">3.1 下载hugo的一个主题eureka</h3>
-<p><a href="https://github.com/wangchucheng/hugo-eureka">Eureka的Github网址</a></p>
-<p>将该项目clone下来，并按<a href="https://www.wangchucheng.com/zh/docs/hugo-eureka/getting-started/">作者文档</a>介绍中所述切换到对应<a href="https://github.com/wangchucheng/hugo-eureka/releases">Release</a>版本。例：</p>
-<pre><code class="language-bash">git clone https://github.com/wangchucheng/hugo-eureka.git
-cd hugo-eureka
-git checkout 749f68c
+<h3 id="22-创建个人博客">2.2 创建个人博客</h3>
+<p>找一个空闲目录，执行下面操作：</p>
+<pre><code class="language-bash">hugo new site site # site是你网站的名字，随便起名
 </code></pre>
-<p>切换完成后，我们使用作者文档中所述的<code>使用Hugo Modules安装</code>。经过我的验证，发现作者仓库中的go.mod有问题，我们删掉当前项目根目录下的<code>go.mod</code>，使用go重新拉取（我并不会使用Go语言，这里我不知道做的对不对，经我试验至少不错😅）。例：</p>
-<pre><code class="language-bas">rm go.mod
-hugo mod init github.com/wangchucheng/hugo-eureka
+<p>然后就是安装一个hugo的主题了，这里我们选择<code>eureka</code>，个人觉得这个主题比较简洁。按<a href="https://www.wangchucheng.com/zh/docs/hugo-eureka/getting-started/">作者文档</a>介绍中所述切换到对应<a href="https://github.com/wangchucheng/hugo-eureka/releases">Release</a>版本。例：</p>
+<pre><code class="language-bash">cd site
+git init
+git submodule add https://github.com/wangchucheng/hugo-eureka.git themes/eureka
+cd themes/eureka
+git checkout 749f68c # 这里的749f68c对应Release的v0.9.3版本
+cd -
 </code></pre>
-<p>运行后会在根目录下生成<code>go.mod,go.sum</code>两个文件。</p>
-<p>至此，我们就算安装完毕了。</p>
-<h3 id="32-使用hugo-server本地预览">3.2 使用hugo server本地预览</h3>
-<p>将项目根目录下文件夹<code>exampleSite</code>下<code>config</code>和<code>content</code>全部copy到项目根目录下。例：</p>
-<pre><code class="language-bash">cp -r exampleSite/* ./
+<p>随后删除当前根目录下的<code>config</code>文件，现在也许叫<code>hugo.toml</code>。将<code>eureka</code>主题提供的<code>config</code>与<code>content</code>复制到当前项目的根目录下。例：</p>
+<pre><code class="language-bash">rm hugo.toml
+cp -r themes/eureka/exampleSite/* ./
 </code></pre>
-<p>随后我们在项目的根目录下运行hugo的webserver，例：</p>
+<p>随后修改<code>config/_default/config.yaml</code>文件，将<code>theme: eureka</code>取消注释并将<code>theme: wangchucheng.com/hugo-eureka</code>注释。</p>
+<p>然后我们就可以使用hugo提供的webserver在本地预览博客啦！运行:</p>
 <pre><code class="language-bash">hugo server
 </code></pre>
-<p>根据命令行提示在浏览器打开相应网址即可。然后就是更改<code>config</code>和<code>content</code>的内容了。往后更新也基本是更改这两个文件夹，由于我了解不深，继续讲解恐怕会产生误导，这里如何更改就请看作者的<a href="https://www.wangchucheng.com/zh/docs/hugo-eureka/getting-started/">文档</a>吧,讲解十分详细。</p>
-<h2 id="4-使用github-pages存放网站">4. 使用Github Pages存放网站</h2>
+<p>想要更改博客内容就只需要更改config和content文件夹就可以，这个根据<a href="https://www.wangchucheng.com/zh/docs/hugo-eureka/getting-started/">作者文档</a>来修改就可以，介绍比较详细。</p>
+<h2 id="3-使用github-pages存放网站">3. 使用Github Pages存放网站</h2>
 <p>现在我们已经可以本地预览博客内容了，但是我们肯定不是为了只搞一个自己看的东西，让我们把他放到公网上大家都访问吧！</p>
-<h3 id="41-打包部署">4.1 打包部署</h3>
+<h3 id="31-打包部署">3.1 打包部署</h3>
 <p>在项目的根目录下运行<code>hugo</code>命名，即可生成<code>public</code>文件夹，文件夹内包含各种静态资源(html,css,js)。常规部署网站是使用<code>Nginx</code>指向静态资源根目录下的<code>index.html</code>，所以如果使用<code>Nginx</code>部署在自己的服务器上，那就正常部署就好，我就不过多赘述了，毕竟如何使用<code>Nginx</code>也不是本文的主题。我们使用Github Pages服务，让Github来帮我们部署静态资源。</p>
 <p>首先创建一个名称如<code>username.github.io</code>的github仓库（username为你的用户名），来使用github pages。创建好后将项目目录下<code>public</code>文件建立与该仓库的连接，并将文件夹下内容推送到仓库里。然后访问<code>https://username.github.io/</code>即可访问该网页。</p>
-<h3 id="42-使用脚本自动化打包部署">4.2 使用脚本自动化打包部署</h3>
+<h3 id="32-使用脚本自动化打包部署">3.2 使用脚本自动化打包部署</h3>
 <p>熟悉如何部署后，就可以使用脚本来代替我们完成这个更新过程了。</p>
 <p>我们分别把项目主体(hugo eureka)放在一个github仓库里，再按上面所说将public文件夹放在github pages的仓库里。然后在<code>hugo eureka</code>下创建脚本<code>update.sh</code>，内容示例如下：</p>
 <pre><code class="language-bash"># 更新本仓库
@@ -373,6 +369,8 @@ cd -
 <p>每次更新内容后运行此脚本即可更新内容到Github Pages。</p>
 <p>还有一种是使用<code>Github Action</code>的方案，大致叙述一下：</p>
 <p><strong>把hugo-eureka存在github的一个仓库，通过设置action的触发条件，比如每次push都触发一次，将hugo-eureka的仓库更新后，通过设置.github/workflow下的文件，在github的服务器上运行hugo打包部署，然后将打包后的文件传到github pages的仓库。这样就实现了自动部署，体现在上面的脚本上就是删除了<code># 用于发布新网站至Github Pages</code>后的内容，将这部分内容由github代为执行。这样就可以不再本机上安装<code>hugo</code>了，也就是可以更换电脑依旧能够写博客。</strong></p>
+<h2 id="4-关于icon的bug">4. 关于icon的bug</h2>
+<p>我在使用过程中发现了一个关于icon的bug，比较影响使用体验。就是想要在除<code>en</code>语言的其它语言页面，想要添加其它icon，是添加不上的。这个icon必须在<code>en</code>的页面先使用过才可以加载出来。</p>
 <h2 id="5-结语">5. 结语</h2>
 <blockquote>
 <p>GoodBye</p>
@@ -465,24 +463,19 @@ cd -
   <nav id="TableOfContents">
   <ul>
     <li><a href="#1-引言">1. 引言</a></li>
-    <li><a href="#2-安装hugo以及go">2. 安装hugo以及go</a>
+    <li><a href="#2-安装hugo及创建个人博客">2. 安装hugo及创建个人博客</a>
       <ul>
         <li><a href="#21-安装hugo">2.1 安装hugo</a></li>
-        <li><a href="#22-安装go">2.2 安装go</a></li>
+        <li><a href="#22-创建个人博客">2.2 创建个人博客</a></li>
       </ul>
     </li>
-    <li><a href="#3-在本地预览个人博客">3. 在本地预览个人博客</a>
+    <li><a href="#3-使用github-pages存放网站">3. 使用Github Pages存放网站</a>
       <ul>
-        <li><a href="#31-下载hugo的一个主题eureka">3.1 下载hugo的一个主题eureka</a></li>
-        <li><a href="#32-使用hugo-server本地预览">3.2 使用hugo server本地预览</a></li>
+        <li><a href="#31-打包部署">3.1 打包部署</a></li>
+        <li><a href="#32-使用脚本自动化打包部署">3.2 使用脚本自动化打包部署</a></li>
       </ul>
     </li>
-    <li><a href="#4-使用github-pages存放网站">4. 使用Github Pages存放网站</a>
-      <ul>
-        <li><a href="#41-打包部署">4.1 打包部署</a></li>
-        <li><a href="#42-使用脚本自动化打包部署">4.2 使用脚本自动化打包部署</a></li>
-      </ul>
-    </li>
+    <li><a href="#4-关于icon的bug">4. 关于icon的bug</a></li>
     <li><a href="#5-结语">5. 结语</a></li>
   </ul>
 </nav>
