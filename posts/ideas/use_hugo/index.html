@@ -104,7 +104,7 @@
     },
     "headline": "如何使用hugo搭建个人博客（以eureka主题为例）？ | Cake\u0027s blog","datePublished": "2024-02-12T00:00:00+00:00",
     "dateModified": "2024-02-12T00:00:00+00:00",
-    "wordCount":  1798 ,
+    "wordCount":  1861 ,
     "publisher": {
         "@type": "Person",
         "name": "Yin Ruxiao",
@@ -370,7 +370,7 @@ cd -
 <p>还有一种是使用<code>Github Action</code>的方案，大致叙述一下：</p>
 <p><strong>把hugo-eureka存在github的一个仓库，通过设置action的触发条件，比如每次push都触发一次，将hugo-eureka的仓库更新后，通过设置.github/workflow下的文件，在github的服务器上运行hugo打包部署，然后将打包后的文件传到github pages的仓库。这样就实现了自动部署，体现在上面的脚本上就是删除了<code># 用于发布新网站至Github Pages</code>后的内容，将这部分内容由github代为执行。这样就可以不再本机上安装<code>hugo</code>了，也就是可以更换电脑依旧能够写博客。</strong></p>
 <h2 id="4-关于icon的bug">4. 关于icon的bug</h2>
-<p>我在使用过程中发现了一个关于icon的bug，比较影响使用体验。就是想要在除<code>en</code>语言的其它语言页面，想要添加其它icon，是添加不上的。这个icon必须在<code>en</code>的页面先使用过才可以加载出来。</p>
+<p>我在使用过程中发现了一个关于icon的bug，比较影响使用体验。就是想要在除<code>en</code>语言的其它语言页面，想要添加其它icon，是添加不上的。这个icon必须在<code>en</code>的页面先使用过才可以加载出来。所以我在<code>en</code>页面下添加了一个author介绍页，<a href="https://lovespace.club/en/authors/icons/">就是这个</a>。我把所有需要用到的icon都在这个页面先加载一下，再拿到别的地方用。</p>
 <h2 id="5-结语">5. 结语</h2>
 <blockquote>
 <p>GoodBye</p>
