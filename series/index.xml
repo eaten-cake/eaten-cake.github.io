@@ -11,9 +11,16 @@
     <lastBuildDate>Wed, 14 Feb 2024 13:56:46 +0800</lastBuildDate>
     <atom:link href="/series/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>hugo</title>
+      <link>/series/hugo/</link>
+      <pubDate>Wed, 14 Feb 2024 13:56:46 +0800</pubDate>
+      <guid>/series/hugo/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>小想法</title>
       <link>/series/%E5%B0%8F%E6%83%B3%E6%B3%95/</link>
-      <pubDate>Wed, 14 Feb 2024 13:56:46 +0800</pubDate>
+      <pubDate>Mon, 12 Feb 2024 16:09:39 +0800</pubDate>
       <guid>/series/%E5%B0%8F%E6%83%B3%E6%B3%95/</guid>
       <description></description>
     </item>

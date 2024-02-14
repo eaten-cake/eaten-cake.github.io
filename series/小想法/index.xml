@@ -8,28 +8,14 @@
     <language>zh</language>
     <copyright>&amp;copy; 2024
 </copyright>
-    <lastBuildDate>Wed, 14 Feb 2024 13:56:46 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 12 Feb 2024 16:09:39 +0800</lastBuildDate>
     <atom:link href="/series/%E5%B0%8F%E6%83%B3%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>如何使用PicGo配置七牛云作为博客图床?</title>
-      <link>/posts/ideas/how_to_use_qiniu/</link>
-      <pubDate>Wed, 14 Feb 2024 13:56:46 +0800</pubDate>
-      <guid>/posts/ideas/how_to_use_qiniu/</guid>
-      <description></description>
-    </item>
     <item>
       <title>博客文章Tutorial</title>
       <link>/posts/ideas/tutorial/</link>
       <pubDate>Mon, 12 Feb 2024 16:09:39 +0800</pubDate>
       <guid>/posts/ideas/tutorial/</guid>
       <description>相关网站 各种小表情 😜 Font Awesome图标库. 杂项 &amp;amp;nbsp; // 半角空格 &amp;amp;emsp; // 全角空格</description>
-    </item>
-    <item>
-      <title>如何使用hugo搭建个人博客（以eureka主题为例）？</title>
-      <link>/posts/ideas/use_hugo/</link>
-      <pubDate>Mon, 12 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>/posts/ideas/use_hugo/</guid>
-      <description>1. 引言 本文介绍如何使用hugo这个静态网站生成器来生成自己的个人博客。并使用Github Pages托管网站使网页可以被在公网访问。 以下所提内容并不深入</description>
     </item>
   </channel>
 </rss>

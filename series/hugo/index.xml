@@ -1,28 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>文章 on Cake&#39;s blog</title>
-    <link>/posts/</link>
-    <description>Recent content in 文章 on Cake&#39;s blog</description>
+    <title>hugo on Cake&#39;s blog</title>
+    <link>/series/hugo/</link>
+    <description>Recent content in hugo on Cake&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <copyright>&amp;copy; 2024
 </copyright>
     <lastBuildDate>Wed, 14 Feb 2024 13:56:46 +0800</lastBuildDate>
-    <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/series/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>如何使用PicGo配置七牛云作为博客图床?</title>
       <link>/posts/ideas/how_to_use_qiniu/</link>
       <pubDate>Wed, 14 Feb 2024 13:56:46 +0800</pubDate>
       <guid>/posts/ideas/how_to_use_qiniu/</guid>
       <description>1. 引言 之前文章介绍了如何使用hugo主题eureka搭建个人博客，但并未介绍如何存储图片，而在写博客过程中我们无法避免要插入图片，因此我们需要有一个第</description>
-    </item>
-    <item>
-      <title>博客文章Tutorial</title>
-      <link>/posts/ideas/tutorial/</link>
-      <pubDate>Mon, 12 Feb 2024 16:09:39 +0800</pubDate>
-      <guid>/posts/ideas/tutorial/</guid>
-      <description>相关网站 各种小表情 😜 Font Awesome图标库. 杂项 &amp;amp;nbsp; // 半角空格 &amp;amp;emsp; // 全角空格</description>
     </item>
     <item>
       <title>如何使用hugo搭建个人博客（以eureka主题为例）？</title>
