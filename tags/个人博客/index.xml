@@ -8,8 +8,15 @@
     <language>zh</language>
     <copyright>&amp;copy; 2024
 </copyright>
-    <lastBuildDate>Mon, 12 Feb 2024 16:09:39 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 14 Feb 2024 13:56:46 +0800</lastBuildDate>
     <atom:link href="/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何使用PicGo配置七牛云作为博客图床?</title>
+      <link>/posts/ideas/how_to_use_qiniu/</link>
+      <pubDate>Wed, 14 Feb 2024 13:56:46 +0800</pubDate>
+      <guid>/posts/ideas/how_to_use_qiniu/</guid>
+      <description></description>
+    </item>
     <item>
       <title>博客文章Tutorial</title>
       <link>/posts/ideas/tutorial/</link>

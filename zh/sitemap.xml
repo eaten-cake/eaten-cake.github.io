@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/</loc>
-    <lastmod>2024-02-12T16:09:39+08:00</lastmod>
+    <lastmod>2024-02-14T13:56:46+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>/tags/</loc>
-    <lastmod>2024-02-12T16:09:39+08:00</lastmod>
+    <lastmod>2024-02-14T13:56:46+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -28,14 +28,14 @@
                 href="/tags/"
                 />
   </url><url>
-    <loc>/posts/ideas/tutorial/</loc>
-    <lastmod>2024-02-12T16:09:39+08:00</lastmod>
-  </url><url>
     <loc>/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2024-02-12T16:09:39+08:00</lastmod>
+    <lastmod>2024-02-14T13:56:46+08:00</lastmod>
+  </url><url>
+    <loc>/posts/ideas/how_to_use_qiniu/</loc>
+    <lastmod>2024-02-14T13:56:46+08:00</lastmod>
   </url><url>
     <loc>/posts/</loc>
-    <lastmod>2024-02-12T16:09:39+08:00</lastmod>
+    <lastmod>2024-02-14T13:56:46+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -48,7 +48,7 @@
                 />
   </url><url>
     <loc>/series/</loc>
-    <lastmod>2024-02-12T16:09:39+08:00</lastmod>
+    <lastmod>2024-02-14T13:56:46+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -61,13 +61,13 @@
                 />
   </url><url>
     <loc>/series/%E5%B0%8F%E6%83%B3%E6%B3%95/</loc>
-    <lastmod>2024-02-12T16:09:39+08:00</lastmod>
+    <lastmod>2024-02-14T13:56:46+08:00</lastmod>
   </url><url>
     <loc>/categories/%E6%9D%82%E8%B0%88/</loc>
-    <lastmod>2024-02-12T16:09:39+08:00</lastmod>
+    <lastmod>2024-02-14T13:56:46+08:00</lastmod>
   </url><url>
     <loc>/categories/</loc>
-    <lastmod>2024-02-12T16:09:39+08:00</lastmod>
+    <lastmod>2024-02-14T13:56:46+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -78,6 +78,9 @@
                 hreflang="zh"
                 href="/categories/"
                 />
+  </url><url>
+    <loc>/posts/ideas/tutorial/</loc>
+    <lastmod>2024-02-12T16:09:39+08:00</lastmod>
   </url><url>
     <loc>/posts/ideas/use_hugo/</loc>
     <lastmod>2024-02-12T00:00:00+00:00</lastmod>
