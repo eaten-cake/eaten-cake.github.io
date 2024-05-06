@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<title>博客文章Tutorial | Cake&#39;s blog</title>
+<title>使用门面模式与单例模式加载动态库 | Cake&#39;s blog</title>
 
 <meta name="generator" content="Hugo Eureka 0.9.3" />
 <link rel="stylesheet" href="/css/eureka.min.9cec6350e37e534b0338fa9a085bf06855de3b0f2dcf857e792e5e97b07ea905d4d5513db554cbc26a9c3da622bae92d.css">
@@ -75,7 +75,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon_hu30363b0acb7a98f1eb7b7f3f216a56ee_9849_180x180_fill_q75_box_center.jpg">
 
 <meta name="description"
-  content="记录一下">
+  content="对调用动态库使用门面模式与单例模式，美化代码">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -87,8 +87,8 @@
       "item":"/posts/"},{
       "@type": "ListItem",
       "position": 2 ,
-      "name":"博客文章Tutorial",
-      "item":"/posts/ideas/tutorial/"}]
+      "name":"使用门面模式与单例模式加载动态库",
+      "item":"/posts/design_pattern/load_dynamic_lib/"}]
 }
 </script>
 
@@ -100,11 +100,10 @@
     "@type": "Article",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "/posts/ideas/tutorial/"
+        "@id": "/posts/design_pattern/load_dynamic_lib/"
     },
-    "headline": "博客文章Tutorial | Cake\u0027s blog","datePublished": "2024-02-12T16:09:39+08:00",
+    "headline": "使用门面模式与单例模式加载动态库 | Cake\u0027s blog","datePublished": "2024-02-12T16:09:39+08:00",
     "dateModified": "2024-02-12T16:09:39+08:00",
-    "wordCount":  36 ,
     "publisher": {
         "@type": "Person",
         "name": "Yin Ruxiao",
@@ -113,20 +112,20 @@
             "url": "/images/favicon.jpg"
         }
         },
-    "description": "记录一下"
+    "description": "对调用动态库使用门面模式与单例模式，美化代码"
 }
-</script><meta property="og:title" content="博客文章Tutorial | Cake&#39;s blog" />
+</script><meta property="og:title" content="使用门面模式与单例模式加载动态库 | Cake&#39;s blog" />
 <meta property="og:type" content="article" />
 
 
 <meta property="og:image" content="/images/favicon.jpg">
 
 
-<meta property="og:url" content="/posts/ideas/tutorial/" />
+<meta property="og:url" content="/posts/design_pattern/load_dynamic_lib/" />
 
 
 
-<meta property="og:description" content="记录一下" />
+<meta property="og:description" content="对调用动态库使用门面模式与单例模式，美化代码" />
 
 
 
@@ -152,7 +151,9 @@
 <meta property="article:section" content="posts" />
 
 
-<meta property="article:tag" content="个人博客" />
+<meta property="article:tag" content="单例模式" />
+
+<meta property="article:tag" content="门面模式" />
 
 
 
@@ -248,7 +249,7 @@
       class=" bg-secondary-bg col-span-2 rounded px-6 py-8 lg:col-span-6"
     >
       <article class="prose">
-  <h1 class="mb-4">博客文章Tutorial</h1>
+  <h1 class="mb-4">使用门面模式与单例模式加载动态库</h1>
 
   <div
   class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
@@ -261,15 +262,15 @@
   </div>
   <div class="me-6 my-2">
     <i class="fas fa-clock me-1"></i>
-    <span>1分钟阅读时长</span>
+    <span>0分钟阅读时长</span>
   </div>
 
   
     <div class="me-6 my-2">
       <i class="fas fa-folder me-1"></i>
       
-        <a href="/categories/%E6%9D%82%E8%B0%88/" class="hover:text-eureka"
-          >杂谈</a
+        <a href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" class="hover:text-eureka"
+          >设计模式</a
         >
       
     </div>
@@ -279,8 +280,8 @@
     <div class="me-6 my-2">
       <i class="fas fa-th-list me-1"></i>
       
-        <a href="/series/%E5%B0%8F%E6%83%B3%E6%B3%95/" class="hover:text-eureka"
-          >小想法</a
+        <a href="/series/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" class="hover:text-eureka"
+          >设计模式</a
         >
       
     </div>
@@ -291,15 +292,7 @@
   
   
 
-  <h2 id="相关网站">相关网站</h2>
-<p><a href="https://www.webfx.com/tools/emoji-cheat-sheet/">各种小表情</a></p>
-<p>😜</p>
-<p><a href="https://fontawesome.com/">Font Awesome图标库</a>.</p>
-<h2 id="杂项">杂项</h2>
-<pre><code class="language-html">&amp;nbsp; // 半角空格
-&amp;emsp; // 全角空格
-</code></pre>
-<p><img src="https://cdn.lovespace.club/images/blog/2024-02-15/20240215000623-2024-02-15-00-06-24.png" alt=""></p>
+  <h2 id="heading"></h2>
 
 </article>
 
@@ -307,7 +300,9 @@
       
         <div class="my-4">
     
-    <a href="/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 me-2 hover:text-eureka"><i class="fas fa-tags mr-1"></i> 个人博客</a>
+    <a href="/tags/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 me-2 hover:text-eureka"><i class="fas fa-tags mr-1"></i> 单例模式</a>
+    
+    <a href="/tags/%E9%97%A8%E9%9D%A2%E6%A8%A1%E5%BC%8F/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 me-2 hover:text-eureka"><i class="fas fa-tags mr-1"></i> 门面模式</a>
     
 </div>
       
@@ -327,13 +322,13 @@
         <span class="text-primary-text block font-bold"
           >上一页</span
         >
-        <a href="/posts/ideas/how_to_use_qiniu/" class="block">如何使用PicGo配置七牛云作为博客图床?</a>
+        <a href="/posts/ideas/tutorial/" class="block">博客文章Tutorial</a>
       
     </div>
     <div class="mt-4 md:mt-0 md:text-right">
       
         <span class="text-primary-text block font-bold">下一页</span>
-        <a href="/posts/design_pattern/load_dynamic_lib/" class="block">使用门面模式与单例模式加载动态库</a>
+        <a href="/posts/ideas/use_hugo/" class="block">如何使用hugo搭建个人博客（以eureka主题为例）？</a>
       
     </div>
   </div>
@@ -367,7 +362,7 @@
   <h3>系列文章</h3>
   
     
-      <a href="/posts/ideas/tutorial/" class="no-underline">博客文章Tutorial</a>
+      <a href="/posts/design_pattern/load_dynamic_lib/" class="no-underline">使用门面模式与单例模式加载动态库</a>
       <br />
     
   
@@ -387,8 +382,7 @@
 >
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#相关网站">相关网站</a></li>
-    <li><a href="#杂项">杂项</a></li>
+    <li><a href="#heading"></a></li>
   </ul>
 </nav>
 </div>
@@ -403,16 +397,6 @@
     
 
     
-    
-      <div
-        class=" bg-secondary-bg prose col-span-2 rounded p-6 lg:col-span-6"
-      >
-        <h3>相关</h3>
-        
-          <a href="/posts/ideas/use_hugo/" class="no-underline">如何使用hugo搭建个人博客（以eureka主题为例）？</a>
-          <br />
-        
-      </div>
     
   </div>
 

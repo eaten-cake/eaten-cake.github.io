@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<title>博客文章Tutorial | Cake&#39;s blog</title>
+<title>单例模式 | Cake&#39;s blog</title>
 
 <meta name="generator" content="Hugo Eureka 0.9.3" />
 <link rel="stylesheet" href="/css/eureka.min.9cec6350e37e534b0338fa9a085bf06855de3b0f2dcf857e792e5e97b07ea905d4d5513db554cbc26a9c3da622bae92d.css">
@@ -75,7 +75,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon_hu30363b0acb7a98f1eb7b7f3f216a56ee_9849_180x180_fill_q75_box_center.jpg">
 
 <meta name="description"
-  content="记录一下">
+  content="Cake&#39;s blog">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -83,50 +83,47 @@
   "itemListElement": [{
       "@type": "ListItem",
       "position": 1 ,
-      "name":"文章",
-      "item":"/posts/"},{
+      "name":"标签",
+      "item":"/tags/"},{
       "@type": "ListItem",
       "position": 2 ,
-      "name":"博客文章Tutorial",
-      "item":"/posts/ideas/tutorial/"}]
+      "name":"单例模式",
+      "item":"/tags/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/"}]
 }
 </script>
 
 
 
+
 <script type="application/ld+json">
 {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/posts/ideas/tutorial/"
-    },
-    "headline": "博客文章Tutorial | Cake\u0027s blog","datePublished": "2024-02-12T16:09:39+08:00",
-    "dateModified": "2024-02-12T16:09:39+08:00",
-    "wordCount":  36 ,
-    "publisher": {
-        "@type": "Person",
-        "name": "Yin Ruxiao",
-        "logo": {
-            "@type": "ImageObject",
-            "url": "/images/favicon.jpg"
+    "@context":"https://schema.org",
+    "@type":"ItemList",
+    "itemListElement":[{
+            "@type":"ListItem",
+            "position":  1 ,
+            "name": "使用门面模式与单例模式加载动态库",
+            "description": "对调用动态库使用门面模式与单例模式，美化代码",
+            "url": "/posts/design_pattern/load_dynamic_lib/"
         }
-        },
-    "description": "记录一下"
+    ]
 }
-</script><meta property="og:title" content="博客文章Tutorial | Cake&#39;s blog" />
-<meta property="og:type" content="article" />
+</script><meta property="og:title" content="单例模式 | Cake&#39;s blog" />
+<meta property="og:type" content="website" />
 
 
 <meta property="og:image" content="/images/favicon.jpg">
 
 
-<meta property="og:url" content="/posts/ideas/tutorial/" />
+<meta property="og:url" content="/tags/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/" />
 
 
 
-<meta property="og:description" content="记录一下" />
+
+
+<meta property="og:description" content="Cake&#39;s blog" />
+
+
 
 
 
@@ -142,29 +139,14 @@
 
 
 
-<meta property="article:published_time" content="2024-02-12T16:09:39&#43;08:00" />
-
-
-<meta property="article:modified_time" content="2024-02-12T16:09:39&#43;08:00" />
+<meta property="og:updated_time" content="2024-02-12T16:09:39&#43;08:00" />
 
 
 
-<meta property="article:section" content="posts" />
+<meta property="article:section" content="tags" />
 
 
-<meta property="article:tag" content="个人博客" />
-
-
-
-
-
-
-
-
-
-
-
-
+<link rel="alternate" type="application/rss+xml" href="/tags/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/index.xml" title="Cake's blog" />
 
 
   <body class="flex min-h-screen flex-col">
@@ -186,9 +168,9 @@
     <div id="target"
         class="hidden block md:flex md:grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20">
         <div class="md:flex md:h-16 text-sm md:grow pb-4 md:pb-0 border-b md:border-b-0">
-            <a href="/posts/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  selected-menu-item  me-4">文章</a>
+            <a href="/posts/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">文章</a>
             <a href="/categories/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">主题</a>
-            <a href="/tags/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">标签</a>
+            <a href="/tags/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  selected-menu-item  me-4">标签</a>
             <a href="/series/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">系列</a>
             <a href="/authors/me/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">关于我</a>
         </div>
@@ -241,16 +223,28 @@
     <main class="grow pt-16">
         <div class="pl-scrollbar">
           <div class="mx-auto w-full max-w-screen-xl lg:px-4 xl:px-8">
+  <article class="prose mx-6 my-8">
+  <h1>单例模式</h1>
   
-  
-  <div class="grid grid-cols-2 gap-4 lg:grid-cols-8 lg:pt-12">
-    <div
-      class=" bg-secondary-bg col-span-2 rounded px-6 py-8 lg:col-span-6"
-    >
-      <article class="prose">
-  <h1 class="mb-4">博客文章Tutorial</h1>
+</article>
 
-  <div
+  <div class="bg-secondary-bg rounded px-6">
+    <div class="overflow-hidden divide-y">
+  
+  <div class="py-6">
+    <div class="flex flex-col-reverse lg:flex-row justify-between">
+  
+  <div class="w-full ">
+    <div class="prose">
+  <a href="/posts/design_pattern/load_dynamic_lib/" class="no-underline">
+    <h3 class="mt-0">使用门面模式与单例模式加载动态库</h3>
+  </a>
+  
+    对调用动态库使用门面模式与单例模式，美化代码
+  
+
+  
+    <div
   class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
 >
   <div class="me-6 my-2">
@@ -261,15 +255,15 @@
   </div>
   <div class="me-6 my-2">
     <i class="fas fa-clock me-1"></i>
-    <span>1分钟阅读时长</span>
+    <span>0分钟阅读时长</span>
   </div>
 
   
     <div class="me-6 my-2">
       <i class="fas fa-folder me-1"></i>
       
-        <a href="/categories/%E6%9D%82%E8%B0%88/" class="hover:text-eureka"
-          >杂谈</a
+        <a href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" class="hover:text-eureka"
+          >设计模式</a
         >
       
     </div>
@@ -279,149 +273,28 @@
     <div class="me-6 my-2">
       <i class="fas fa-th-list me-1"></i>
       
-        <a href="/series/%E5%B0%8F%E6%83%B3%E6%B3%95/" class="hover:text-eureka"
-          >小想法</a
+        <a href="/series/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" class="hover:text-eureka"
+          >设计模式</a
         >
       
     </div>
   
 </div>
 
-
-  
-  
-
-  <h2 id="相关网站">相关网站</h2>
-<p><a href="https://www.webfx.com/tools/emoji-cheat-sheet/">各种小表情</a></p>
-<p>😜</p>
-<p><a href="https://fontawesome.com/">Font Awesome图标库</a>.</p>
-<h2 id="杂项">杂项</h2>
-<pre><code class="language-html">&amp;nbsp; // 半角空格
-&amp;emsp; // 全角空格
-</code></pre>
-<p><img src="https://cdn.lovespace.club/images/blog/2024-02-15/20240215000623-2024-02-15-00-06-24.png" alt=""></p>
-
-</article>
-
-
-      
-        <div class="my-4">
-    
-    <a href="/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 me-2 hover:text-eureka"><i class="fas fa-tags mr-1"></i> 个人博客</a>
-    
-</div>
-      
-
-      
-
-
-
-      
-
-      
-  <div
-    class="-mx-2 mt-4 flex flex-col border-t px-2 pt-4 md:flex-row md:justify-between"
-  >
-    <div>
-      
-        <span class="text-primary-text block font-bold"
-          >上一页</span
-        >
-        <a href="/posts/ideas/how_to_use_qiniu/" class="block">如何使用PicGo配置七牛云作为博客图床?</a>
-      
-    </div>
-    <div class="mt-4 md:mt-0 md:text-right">
-      
-        <span class="text-primary-text block font-bold">下一页</span>
-        <a href="/posts/design_pattern/load_dynamic_lib/" class="block">使用门面模式与单例模式加载动态库</a>
-      
-    </div>
-  </div>
-
-
-      
-
-
-
-  <script id="utterances" src="https://utteranc.es/client.js"
-            issue-term=pathname
-            repo=eaten-cake/docs
-              theme=preferred-color-scheme
-        crossorigin="anonymous"
-        async>
-</script>
-<script>
-    if (storageColorScheme == "Light") {
-      document.getElementById('utterances').setAttribute('theme', 'github-light')
-    } else if (storageColorScheme == "Dark") {
-      document.getElementById('utterances').setAttribute('theme', 'github-dark')
-    }
-</script>
-
-    </div>
-    
-      <div class="col-span-2">
-        
-          
-<div class="bg-secondary-bg prose max-w-none rounded p-6">
-  <h3>系列文章</h3>
-  
-    
-      <a href="/posts/ideas/tutorial/" class="no-underline">博客文章Tutorial</a>
-      <br />
-    
   
 </div>
 
-        
-        
-          <div
-  class="
-    bg-primary-bg
-   prose sticky top-16 z-10 hidden px-6 py-4 lg:block"
->
-  <h3>本页内容</h3>
-</div>
-<div
-  class="sticky-toc  hidden px-6 pb-6 lg:block"
->
-  <nav id="TableOfContents">
-  <ul>
-    <li><a href="#相关网站">相关网站</a></li>
-    <li><a href="#杂项">杂项</a></li>
-  </ul>
-</nav>
-</div>
-<script>
-  window.addEventListener("DOMContentLoaded", () => {
-    enableStickyToc();
-  });
-</script>
-
-        
-      </div>
-    
-
-    
-    
-      <div
-        class=" bg-secondary-bg prose col-span-2 rounded p-6 lg:col-span-6"
-      >
-        <h3>相关</h3>
-        
-          <a href="/posts/ideas/use_hugo/" class="no-underline">如何使用hugo搭建个人博客（以eureka主题为例）？</a>
-          <br />
-        
-      </div>
-    
   </div>
 
   
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        hljs.highlightAll();
-      });
-    </script>
+</div>
+  </div>
+  
+</div>
+
+
+  </div>
+  
 
           </div>
         </div>

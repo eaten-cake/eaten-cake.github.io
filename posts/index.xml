@@ -25,6 +25,13 @@
       <description>相关网站 各种小表情 😜 Font Awesome图标库. 杂项 &amp;amp;nbsp; // 半角空格 &amp;amp;emsp; // 全角空格</description>
     </item>
     <item>
+      <title>使用门面模式与单例模式加载动态库</title>
+      <link>/posts/design_pattern/load_dynamic_lib/</link>
+      <pubDate>Mon, 12 Feb 2024 16:09:39 +0800</pubDate>
+      <guid>/posts/design_pattern/load_dynamic_lib/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>如何使用hugo搭建个人博客（以eureka主题为例）？</title>
       <link>/posts/ideas/use_hugo/</link>
       <pubDate>Mon, 12 Feb 2024 00:00:00 +0000</pubDate>

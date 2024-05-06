@@ -17,5 +17,19 @@
       <guid>/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
       <description></description>
     </item>
+    <item>
+      <title>单例模式</title>
+      <link>/tags/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</link>
+      <pubDate>Mon, 12 Feb 2024 16:09:39 +0800</pubDate>
+      <guid>/tags/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>门面模式</title>
+      <link>/tags/%E9%97%A8%E9%9D%A2%E6%A8%A1%E5%BC%8F/</link>
+      <pubDate>Mon, 12 Feb 2024 16:09:39 +0800</pubDate>
+      <guid>/tags/%E9%97%A8%E9%9D%A2%E6%A8%A1%E5%BC%8F/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
